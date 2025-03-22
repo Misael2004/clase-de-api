@@ -1,0 +1,112 @@
+# API de Tareas (Task API)
+
+Este proyecto es una API desarrollada en **Node.js** como parte de una clase de la Universidad **O&M**. La API permite gestionar tareas mediante un CRUD (Create, Read, Update, Delete) utilizando validaciones con **express-validator**.
+
+## Tecnologías utilizadas
+
+- **Node.js**
+- **Express.js**
+- **express-validator** (para validaciones)
+
+## Instalación
+
+1. Clonar el repositorio:
+   ```sh
+   git clone https://github.com/tuusuario/tu-repositorio.git
+   ```
+2. Instalar dependencias:
+   ```sh
+   cd tu-repositorio
+   npm install
+   ```
+3. Configurar variables de entorno en un archivo `.env`:
+   ```env
+   PORT=3000
+   ```
+4. Iniciar el servidor:
+   ```sh
+   npm start
+   ```
+
+## Endpoints
+
+### Crear una tarea
+- **Método:** `POST /task`
+- **Cuerpo de la solicitud:**
+  ```json
+  {
+    "name": "Nombre de la tarea",
+    "description": "Descripción de la tarea",
+    "teacher": "Nombre del profesor"
+  }
+  ```
+- **Respuesta:**
+  ```json
+  {
+    "message": "Tarea creada exitosamente",
+    "task": {
+      "name": "Nombre de la tarea",
+      "description": "Descripción de la tarea",
+      "teacher": "Nombre del profesor"
+    }
+  }
+  ```
+
+### Obtener todas las tareas
+- **Método:** `GET /task`
+- **Respuesta:**
+  ```json
+  [
+    {
+      "name": "Nombre de la tarea",
+      "description": "Descripción de la tarea",
+      "teacher": "Nombre del profesor"
+    }
+  ]
+  ```
+
+### Actualizar una tarea
+- **Método:** `PUT /task`
+- **Cuerpo de la solicitud:**
+  ```json
+  {
+    "name": "Nuevo nombre de la tarea",
+    "description": "Nueva descripción de la tarea",
+    "teacher": "Nuevo nombre del profesor"
+  }
+  ```
+- **Respuesta:**
+  ```json
+  {
+    "message": "Tarea actualizada exitosamente",
+    "task": {
+      "name": "Nuevo nombre de la tarea",
+      "description": "Nueva descripción de la tarea",
+      "teacher": "Nuevo nombre del profesor"
+    }
+  }
+  ```
+
+### Eliminar una tarea
+- **Método:** `DELETE /task`
+- **Cuerpo de la solicitud:**
+  ```json
+  {
+    "name": "Nombre de la tarea a eliminar"
+  }
+  ```
+- **Respuesta:**
+  ```json
+  {
+    "message": "Tarea eliminada exitosamente"
+  }
+  ```
+
+## Autor
+
+**Nombre del estudiante** - Universidad O&M
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
+
