@@ -12,11 +12,11 @@ Este proyecto es una API desarrollada en **Node.js** como parte de una clase de 
 
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/tuusuario/tu-repositorio.git
+   git clone https://github.com/Misael2004/clase-de-api
    ```
 2. Instalar dependencias:
    ```sh
-   cd tu-repositorio
+   cd clase-de-api
    npm install
    ```
 3. Configurar variables de entorno en un archivo `.env`:
@@ -43,7 +43,7 @@ Este proyecto es una API desarrollada en **Node.js** como parte de una clase de 
 - **Respuesta:**
   ```json
   {
-    "message": "Tarea creada exitosamente",
+    "message": "Task created successfully",
     "task": {
       "name": "Nombre de la tarea",
       "description": "Descripción de la tarea",
@@ -78,7 +78,7 @@ Este proyecto es una API desarrollada en **Node.js** como parte de una clase de 
 - **Respuesta:**
   ```json
   {
-    "message": "Tarea actualizada exitosamente",
+    "message": "Task updated successfully",
     "task": {
       "name": "Nuevo nombre de la tarea",
       "description": "Nueva descripción de la tarea",
@@ -98,7 +98,7 @@ Este proyecto es una API desarrollada en **Node.js** como parte de una clase de 
 - **Respuesta:**
   ```json
   {
-    "message": "Tarea eliminada exitosamente"
+    "message": "Task deleted successfully"
   }
   ```
 
@@ -109,4 +109,3 @@ Este proyecto es una API desarrollada en **Node.js** como parte de una clase de 
 ## Licencia
 
 Este proyecto está bajo la licencia MIT.
-
